@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Galeria Vial Rurales | Apia Proyectos</title>
+	
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/principal.css">
+
+	<link rel="icon" type="image/png" sizes=16x16 href="../media otros/logoApia.png" />
+	<link rel="stylesheet" type="text/css" href="../css/visor.css">	
+	<link rel="stylesheet" href="../css/lbox.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+</head>
+
+
+<body >
+<header id="myHeader">	
+<li id="botonMenuMovil"style="font-size:30px;cursor:pointer" onclick="openNav()">
+			<a>&#9776; Menu</a></li>	
+<div id="letrero" >					
+	<h1> Apia Proyectos <i>y Soluciones S.A.S.</i></h1>
+	<img id=logo src="../media otros/logoApia.png">
+</div>		
+<nav class="PC">
+	<ul>			
+		<li><a href="../index.html" >Inicio</a></li>
+		<li><a href="../index.html#galeria">Galeria</a></li>
+		<li><a href="../index.html#videos" >Videos</a></li>
+		<li><a href="../index.html#contacto" >Contacto</a></li>
+	</ul>
+</nav>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../index.html"  onclick="closeNav()">Inicio</a>
+  <a href="../index.html#galeria"  onclick="closeNav()">Galeria</a>
+  <a href="../index.html#videos"  onclick="closeNav()">Videos</a>	
+  <a href="../index.html#contacto"  onclick="closeNav()">Contacto</a>
+</div>
+</header>	
+
+
+<!----------------------------CONTENIDO ----------------------------->
+	<section id="galeria">	
+		<li><a href="../index.html#galeria" class="previous">&laquo; Volver a Galeria</a></li>
+		<h2>Galeria | Vias Rurales</h2>		
+			
+	</section>	
+	<footer>
+		<div id="redes">
+			<a href="">link 1</a>
+			<a href="">link 2</a>
+		</div>		
+	</footer>	
+	<div id="myModal" class="modal" onclick="closeModal()">
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+	    <div class="mySlides" id="principal">      
+	      <img id="preview" src="" style="width:100%">
+	    </div>
+	    <div class="caption-container">
+	      <p id="caption"></p>
+	    </div>
+	  </div>
+	</div>
+
+<!---------------------------FIN DE CONTENIDO------------------------>
+
+<div id="myModal" class="modal" onclick="closeModal()">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides" id="principal">      
+      <img id="preview" src="" style="width:100%">
+    </div>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/principal.js"></script>
+<script src="../js/visor-and-lbox.js"></script>
+<script>
+chargeImg("Via de _________","../fotos/vias rurales/rural","Fotografias de vias rurales" ,15);	
+</script>
+
+</body>
+</html>

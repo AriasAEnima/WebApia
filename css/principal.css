@@ -115,6 +115,9 @@ i {
 	font-style: normal;
 }
 
+#videos, hr{
+	margin-top: 35px;
+}
 #letrero{	
 	height: 100%;
 	padding: 5px;	
@@ -135,8 +138,7 @@ h1{
 	
 }
 ul{			
-	position: relative		
-	border: 1px solid green;
+	position: relative			
 	height: 100%;
 	padding: 0;
 	margin:0;
@@ -179,9 +181,11 @@ article{
 	margin: 10px;
 	font-size: 30px;	
 	position: relative;		
-	vertical-align: top;
-	
+	vertical-align: top;	
 }
+
+
+
 article>p{
 	font-size: 25px;	
 	text-align: center;	
@@ -189,12 +193,21 @@ article>p{
 }
 
 
+footer *{	
+	margin:0;	
+}
 footer{
-	text-align: center;
-	border: 1px solid #D91BE5;
-	margin:10px auto 10px auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	text-align: center;	
+	margin-bottom: 40px;
+	
+}
+footer p{
+	display: inline-block;
+	padding:10px;
+	font-size: 25px;
+}
+footer h1{
+	margin:10px;	
 }
 
 @media screen and (max-width: 1200px){
