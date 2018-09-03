@@ -14,7 +14,9 @@ $("a").click(function () {
 		smooth_scroll_to(elem);
 	}
 });
-
+$(document).ready(function() {
+    document.body.style.opacity=1;
+});
 
 function smooth_scroll_to(elem){	
 	var offset = 0;

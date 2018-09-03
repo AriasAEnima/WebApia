@@ -6,7 +6,7 @@
 /*------- Colores base ----------------*/
 section,footer,footer a{
 	background: black;
-	color: white !important;;
+	color: white !important;
 }
 header{	
 	background : white;	
@@ -18,14 +18,16 @@ li a:hover{
 	box-shadow: 0px 0px 45px 0px rgba(0,0,0,1);
 }
 h1, li a{
-	color: black;
+	color: black;	
 	/*text-shadow: 2px 2px 1px #000;*/	
 }
 
-li a{
-	border: 0px solid white;
+li a{	
+	border: 0px solid white;	
 }
 body{	
+	/*Esto permite evitar el parpadeo (mirar principal.js readyfunction)*/
+	opacity: 0;
 	/*font-family: 'PT Sans Narrow', sans-serif;	*/
 	 font-family: 'Rajdhani', sans-serif;
 }
@@ -70,12 +72,10 @@ header{
 h1,h2,nav{
 	user-select: none;
 }
-nav{
-	margin:0;	
-	padding: 0;
+nav{	
 	height: 100%;		
 	text-transform: uppercase;	
-	text-align: right;	
+	text-align: right;			
 }
 
 #botonMenuMovil{
@@ -133,26 +133,23 @@ i {
 }
 h1{
 	margin-left: 30px;
-	padding: 0px;
-	font-size: 28px;	
 	
+	font-size: 28px;	
 }
-ul{			
-	position: relative			
-	height: 100%;
-	padding: 0;
-	margin:0;
-}
-li{
-	top:0px;
-	display: inline-block;	
+ul{		
+	padding: 0px;	
+	margin:0;			
 	height: 100%;	
-				
-	position: relative;
+}
+li{	
+	display: inline-block;	
+	height: 100%;					
+	position: relative;		
 }
 li a{	
 	height: 100%;
-	display: block;		
+	display: block;	
+	position: relative;	
 	text-decoration: none;		
 	font-weight: bold;	
 	padding: 10px;
@@ -197,6 +194,7 @@ footer *{
 	margin:0;	
 }
 footer{
+	padding-top:10px;
 	text-align: center;	
 	margin-bottom: 40px;
 	
@@ -206,9 +204,7 @@ footer p{
 	padding:10px;
 	font-size: 25px;
 }
-footer h1{
-	margin:10px;	
-}
+
 
 @media screen and (max-width: 1200px){
 	section{	
