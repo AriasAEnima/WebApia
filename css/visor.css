@@ -1,11 +1,16 @@
-
-
-#collage {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+h3{
+  margin:30px 0px 30px 0px;
 }
 
+article {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px; 
+}
+
+hr{
+  margin-top:30px;
+}
 .column img:hover{     
   transform: scale(1.2);     
 } 

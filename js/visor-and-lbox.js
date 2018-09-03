@@ -23,29 +23,30 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }  
-var number=30;
-var rows=number/4;
-var k=number%4;
+var number=0;
 var contchangerow=1;	
 var i=0;
 var divinit="<div class='column'>";
-var temp=divinit;
-//document.getElementById("collage").innerHTML=divinit; 
-function chargeImg() {		
+var temp="";
+function chargeImg(title,path,desc,num) {
+	number=num;	
+	var rows=Math.floor(number/4);
+	var k=number%4;
+	temp="<hr><h3>"+title+"</h3>"+"<article>"+divinit;
 	for(i = 1; i <=number; i++){
-	    temp += "<div class='container'> <img src='../fotos/Parques/parques ("+ i
-	     + ").jpg' alt='Descripcion de Sangil foto #"+i+"' onclick='openModal(this)'></div>";
+	    temp += "<div class='container'> <img src='"+path+" ("+ i
+	     + ").jpg' alt='"+desc+"' onclick='openModal(this)'></div>";
 	    if(contchangerow>=rows){
 	    	if(k>0 && contchangerow==rows){
-	    		k-=1;	    			
+	    		k-=1;	    			    	
 	    	}else{	    		
-	    		closeDiv();  		
+	    		closeDiv();  			    		
 	    	}	    	
 	    }
 	    contchangerow++;
 	}		// body...
-	console.log(temp);
-	document.getElementById("collage").innerHTML=temp; 
+	temp+="</article>";	
+	document.getElementById("galeria").innerHTML+=temp; 
 }
 
 function closeDiv() {
@@ -55,4 +56,3 @@ function closeDiv() {
 		temp +=divinit;
 	}	   
 }
-chargeImg();
