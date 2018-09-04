@@ -230,6 +230,7 @@ article{
 }
 #logosClientes img{
 	max-height: 200px;	
+	max-width: 300px;
 }
 
 article p{
