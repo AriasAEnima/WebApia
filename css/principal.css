@@ -239,24 +239,30 @@ footer p{
 }
 
 @media screen and (max-width: 1200px){
-	section{	
-		/*No tocar*/
-		padding-top:80px; 
-	}
+	
 	header{
-		height: 80px
+		height: 80px;
 	}
+	section{
+		padding-top: 82px;
+	}
+
 	h1{
 		font-size: 25px;		
 	}
 	li a{
 		padding-top:25px;
 	}
+
 }
 
 @media screen and (max-width: 920px){
 	#letrero i{
 		display:none !important;
+	}
+	#inicio article{
+		padding-left: 8%;
+		padding-right: 8%;
 	}
 	
 	article p{
@@ -269,9 +275,7 @@ footer p{
 	li a{
 		padding-right: 5px;
 	}
-	h2{
-		margin: 10px auto 30px auto;
-	}
+	
 
 }
 @media screen and (max-width: 700px){
@@ -279,9 +283,9 @@ footer p{
 		height: 60px;
 		margin:0;
 	}	
+	
 	section{
-		padding-top:60px;
-		margin-bottom: 20px;
+		padding-top: 62px;
 	}
 	#botonMenuMovil{			
 		display: inline-block;				
