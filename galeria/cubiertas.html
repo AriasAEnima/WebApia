@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Galeria Maquinaria |Apia Proyectos</title>
+	<title>Galeria Cubiertas | Apia Proyectos</title>
 	
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
@@ -18,13 +18,12 @@
 
 <body >
 <header id="myHeader">	
-<li id="botonMenuMovil"style="font-size:30px;cursor:pointer" onclick="openNav()">
-			<a>&#9776; Menu</a></li>	
+<a id="botonMenuMovil"style="cursor:pointer" onclick="openNav()">&#9776; Menu</a>
 <div id="letrero" >					
 	<h1> Apia Proyectos <i>y Soluciones S.A.S.</i></h1>
 	<img id=logo src="../media otros/logoApia.png">
 </div>		
-<nav class="PC">
+<nav id="mySidenav" class="sidenav">
 	<ul>			
 		<li><a href="../index.html" >Inicio</a></li>
 		<li><a href="../index.html#galeria">Galeria</a></li>
@@ -32,22 +31,21 @@
 		<li><a href="#contacto" class="anchor" >Contacto</a></li>
 	</ul>
 </nav>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="../index.html"  onclick="closeNav()">Inicio</a>
-  <a href="../index.html#galeria"  onclick="closeNav()">Galeria</a>
-  <a href="../index.html#videos"  onclick="closeNav()">Videos</a>	
-  <a href="#contacto"  class="anchor" onclick="closeNav()">Contacto</a>
-</div>
 </header>	
 
 
 <!----------------------------CONTENIDO ----------------------------->
 	<section id="galeria">	
 		<li><a href="../index.html#galeria" class="previous">&laquo; Volver a Galeria</a></li>
-		<h2>Galeria | Maquinaria</h2>		
+		<h2>Galeria | Cubiertas</h2>		
 			
 	</section>	
+	<footer>
+		<div id="redes">
+			<a href="">link 1</a>
+			<a href="">link 2</a>
+		</div>		
+	</footer>	
 	<footer id="contacto">
 		<h2>Contacto</h2>	
 		<strong>		
@@ -57,7 +55,6 @@
 		<p>email: administrativo@apiaproyectos.com</p>
 		</strong>
 	</footer>	
-	
 
 <!---------------------------FIN DE CONTENIDO------------------------>
 
@@ -76,7 +73,7 @@
 <script src="../js/principal.js"></script>
 <script src="../js/visor-and-lbox.js"></script>
 <script>
-chargeImg("Maquinaria que Administramos","../fotos/Administracion de Maquinaria/maquina","Fotografias de maquinaria" ,25);	
+chargeImg("Cubierta  _________","../fotos/cubiertas/cubierta","Fotografias de cubierta" ,2);	
 </script>
 
 </body>

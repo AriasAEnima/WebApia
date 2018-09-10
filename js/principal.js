@@ -30,13 +30,14 @@ function openNav() {
 
 function closeNav() {
 	if(movil){
-		document.getElementById("mySidenav").style.width = "0";
-		console.log("Cerrar");
+		document.getElementById("mySidenav").style.width = "0";	
 	}
 } 
+
 window.onresize = function(event) {
    if(screen.width<=700){
    		movil=true;
+      document.getElementById("mySidenav").style.width = "0";
    }else{
    		movil=false;	
    		document.getElementById("mySidenav").style.width="auto";
