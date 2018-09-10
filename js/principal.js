@@ -1,4 +1,4 @@
-var movil=screen.width<=700;
+var movil=$(window).width()<=700;
 
 $("a").click(function () {		
     $(this).animate({
@@ -13,9 +13,6 @@ $("a").click(function () {
 		smooth_scroll_to(elem);
 	}
 });
-$(document).ready(function() {
-    document.body.style.opacity=1;
-});
 
 function smooth_scroll_to(elem){	
 	var offset = 0;
@@ -28,18 +25,23 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "150px";
 }
 
-function closeNav() {
-	if(movil){
+function closeNav() { 
+	if(movil){     
 		document.getElementById("mySidenav").style.width = "0";	
 	}
 } 
 
 window.onresize = function(event) {
-   if(screen.width<=700){
+   if($(window).width()<=700){
    		movil=true;
-      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mySidenav").style.width="0";
+
    }else{
    		movil=false;	
    		document.getElementById("mySidenav").style.width="auto";
    }
 };
+
+$(document).ready(function() {
+    document.body.style.opacity=1;
+});

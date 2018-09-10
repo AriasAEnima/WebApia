@@ -313,7 +313,6 @@ footer p:hover{
 	footer p{
 		font-size: 20px;
 	}
-
 	.sidenav {
 	    height: 100%;
 	    width: 0;
@@ -351,6 +350,23 @@ footer p:hover{
 	    margin-left: 50px;
 	    text-decoration: none;
 	}	
+}
+
+@media screen and (max-width: 530px){
+	h1,li a{
+		font-size: 20px;
+	}
+	#clients,#obras{
+		display: block;
+		width: 100%;
+	}
+	#obras img{
+		height: 100px;
+		width: auto;
+	}
+	#logosClientes img{
+		max-height: 75px;
+	}
 }
 
 @media screen and (max-width: 370px){
