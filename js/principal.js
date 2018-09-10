@@ -1,5 +1,4 @@
-var delta= document.getElementById("myHeader").offsetHeight;
-
+var movil=screen.width<=700;
 
 $("a").click(function () {		
     $(this).animate({
@@ -26,9 +25,20 @@ function smooth_scroll_to(elem){
 	}, 550);	   
 }
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "150px";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}  
+	if(movil){
+		document.getElementById("mySidenav").style.width = "0";
+		console.log("Cerrar");
+	}
+} 
+window.onresize = function(event) {
+   if(screen.width<=700){
+   		movil=true;
+   }else{
+   		movil=false;	
+   		document.getElementById("mySidenav").style.width="auto";
+   }
+};

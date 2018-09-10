@@ -80,35 +80,10 @@ nav{
 #botonMenuMovil{
 	display: none;
 }
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;    
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+.closebtn{
+	display: none;
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 30px;   
-    display: block;
-    transition: 0.3s;
-    color:white;
-}
-
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
 
 i {
 	font-style: normal;
@@ -308,9 +283,8 @@ footer p:hover{
 	li a{
 		padding-right: 5px;
 	}
-	
-
 }
+
 @media screen and (max-width: 700px){
 	header{
 		height: 60px;
@@ -321,7 +295,9 @@ footer p:hover{
 		padding-top: 50px;
 	}
 	#botonMenuMovil{			
-		display: inline-block;				
+		display: inline-block;	
+		margin:15px;
+		font-size: 25px;
 		height: 100%;	
 	}
 	#botonMenuMovil a{			
@@ -338,9 +314,42 @@ footer p:hover{
 		font-size: 20px;
 	}
 
-	nav{
-		display: none !important;
-		margin: 0 !important;
+	.sidenav {
+	    height: 100%;
+	    width: 0;
+	    position: fixed;
+	    z-index: 30;
+	    margin:0;
+	    padding: 0;
+	    top: 0;    
+	    background-color: #111;
+	    overflow-x: hidden;
+	    transition: 0.5s;
+	    padding: 60px 0px 0px 0px;
+	}
+	.sidenav li {	  
+		height: auto;
+		margin:0;
+		margin-right: 10px;
+	    text-decoration: none;
+	    font-size: 30px;   
+	    display: block;
+	    transition: 0.3s;	     
+	}
+	nav a{
+		color:white !important;
+	}
+	.closebtn{
+		display: block;
+		font-size: 50px;
+	}
+	.sidenav .closebtn {
+	    position: absolute;
+	    color:white !important;
+	    top: 0;
+	    right: 10px;	    
+	    margin-left: 50px;
+	    text-decoration: none;
 	}	
 }
 

@@ -17,25 +17,19 @@
 
 <body >
 <header id="myHeader">	
-<li id="botonMenuMovil"style="font-size:30px;cursor:pointer" onclick="openNav()">
-			<a>&#9776; Menu</a></li>	
+<a id="botonMenuMovil"style="cursor:pointer" onclick="openNav()">&#9776; Menu</a>
 <div id="letrero" >					
 	<h1> Apia Proyectos <i>y Soluciones S.A.S.</i></h1>
 	<img id=logo src="media otros/logoApia.png">
 </div>		
-<nav class="PC">
-	<ul>			
-		<li><a href="#inicio" class="anchor">Inicio</a></li>
-		<li><a href="#galeria" class="anchor">Fotos y Videos</a></li>	
-		<li><a href="#contacto" class="anchor">Contacto</a></li>
+<nav id="mySidenav" class="sidenav">
+	<ul>
+	 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>			
+		<li><a href="#inicio" class="anchor" onclick="closeNav()">Inicio</a></li>
+		<li><a href="#galeria" class="anchor" onclick="closeNav()">Fotos y Videos</a></li>	
+		<li><a href="#contacto" class="anchor" onclick="closeNav()">Contacto</a></li>
 	</ul>
 </nav>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#inicio" class="anchor" onclick="closeNav()">Inicio</a>
-  <a href="#galeria" class="anchor" onclick="closeNav()">Fotos y Videos</a>
-  <a href="#contacto" class="anchor" onclick="closeNav()">Contacto</a>
-</div>
 </header>	
 
 <!----------------------------CONTENIDO ----------------------------->
