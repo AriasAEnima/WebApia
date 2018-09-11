@@ -12,10 +12,13 @@
 .column{
 	position: relative;
 	width: 100%;
-	height:	33%;
+	height:	23%;
 	display: flex;	
 	overflow: hidden;			
-}			
+}		
+#last{
+	height: 29%;
+}	
 .album img{			
 	overflow: hidden;	
 	min-height: 100%;
