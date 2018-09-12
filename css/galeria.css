@@ -12,13 +12,11 @@
 .column{
 	position: relative;
 	width: 100%;
-	height:	23%;
+	height:	33%;
 	display: flex;	
 	overflow: hidden;			
 }		
-#last{
-	height: 29%;
-}	
+
 .album img{			
 	overflow: hidden;	
 	min-height: 100%;
@@ -49,9 +47,10 @@
 	flex-basis: 0;
 	z-index: 10;
 }
-#parques{
+#parques,#maquinaria{
 	flex-grow: 1.7;
 }
+
 
 #aguas{
 	flex-grow: 1.6;
