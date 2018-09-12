@@ -1,14 +1,20 @@
 
+
+var number=0;
+var contchangerow=1;	
+var i=0;
+var divinit="<div class='column'>";
+var temp="";
+
 function openModal(e) {
 	document.getElementById("preview").src=e.src;	
 	document.getElementById('myModal').style.display = "block";
-	showSlides(e);
+	showSlides(e);	
 }
 
 function closeModal() {
 	document.getElementById('myModal').style.display = "none";
 }
-
 
 function showSlides(e) {
 	var slide=document.getElementById("principal");
@@ -16,18 +22,7 @@ function showSlides(e) {
 	slide.style.display = "block";
 	captionText.innerHTML= e.getAttribute('alt');
 }
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}  
-var number=0;
-var contchangerow=1;	
-var i=0;
-var divinit="<div class='column'>";
-var temp="";
 function chargeImg(title,path,desc,num) {
 	number=num;	
 	var rows=Math.floor(number/4);
@@ -46,7 +41,7 @@ function chargeImg(title,path,desc,num) {
 	    contchangerow++;
 	}		// body...
 	temp+="</article>";	
-	document.getElementById("galeria").innerHTML+=temp; 
+	document.getElementById("galeria").innerHTML+=temp; 	
 }
 
 function closeDiv() {

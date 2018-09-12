@@ -33,21 +33,7 @@ body{
 	/*font-family: 'PT Sans Narrow', sans-serif;	*/
 	 font-family: 'Rajdhani', sans-serif;
 }
-.previous{
- 	display: inline-block;
- 	padding: 10px 0px 0px 15px;	
- 	float:left; 
- 	font-size: 30px; 	
- 	color:white;
- 	text-shadow: none;
- }
- .previous:hover{
- 	/* -------- */
- 	border-bottom: 2px solid white; 
- }
- .previous:active{
-	transform: scale(1.2);
- }
+
 
 /*-----------------------*/
 
@@ -141,11 +127,13 @@ li{
 	height: 100%;					
 	position: relative;		
 }
+a{
+	text-decoration: none;
+}
 li a{	
 	height: 100%;
 	display: block;	
-	position: relative;	
-	text-decoration: none;		
+	position: relative;				
 	font-weight: bold;	
 	padding: 10px;
 	padding-top:46px;
@@ -293,11 +281,10 @@ footer p:hover{
 @media screen and (max-width: 700px){
 	header{
 		height: 60px;
-		margin:0;
-	}	
-	
+		
+	}		
 	section{
-		padding-top: 50px;
+		padding-top: 60px;
 	}
 	#botonMenuMovil{			
 		display: inline-block;	
@@ -314,6 +301,9 @@ footer p:hover{
 	h2{
 		font-size: 30px;
 		margin-bottom: 15px;
+	}
+	h3{
+		font-size: 25px;
 	}
 	footer p{
 		font-size: 20px;
@@ -378,8 +368,7 @@ footer p:hover{
 	}
 }
 
-@media screen and (max-width: 370px){
-	
+@media screen and (max-width: 370px){	
 	h1,li a{
 		font-size: 20px;
 	}

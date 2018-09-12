@@ -27,15 +27,15 @@
 	<img id=logo src="../media%20otros/logoApia.png" alt="logo de apia proyectos">
 </div>		
 
-
 <nav id="mySidenav" class="sidenav">
-	<ul>			
-		<li><a href="../index.html" >Inicio</a></li>
-		<li><a href="../index.html#galeria">Galeria</a></li>
-		<li><a href="../index.html#videos" >Videos</a></li>
-		<li><a href="#contacto" class="anchor" >Contacto</a></li>
+	<ul>
+	 	<li class="closebtn"><a href="javascript:void(0)"  onclick="closeNav()">&times;</a></li>			
+		<li><a href="../index.html#g#inicio" onclick="closeNav()">Inicio</a></li>
+		<li><a href="../index.html#galeria"  onclick="closeNav()">Fotos y Videos</a></li>	
+		<li><a href="#contacto" class="anchor" onclick="closeNav()">Contacto</a></li>
 	</ul>
 </nav>
+
 </header>	
 
 
@@ -58,7 +58,6 @@
 	
 
 <!---------------------------FIN DE CONTENIDO------------------------>
-
 <div id="myModal" class="modal" onclick="closeModal()">
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
@@ -70,6 +69,7 @@
     </div>
   </div>
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="../js/principal.js"></script>
 <script src="../js/visor-and-lbox.js"></script>
