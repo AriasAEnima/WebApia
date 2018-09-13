@@ -3,17 +3,20 @@ h3{
   margin:30px 0px 30px 0px;
 }
 .previous{
-  padding: 10px 0px 0px 15px;   
+  display: inline-block;
   font-size: 30px;  
   color:white;
   text-shadow: none;
+  margin-top:10px;
+  border-bottom:  2px solid black; 
+
 }
 .previous:hover{
 /*  -------- */
-  border-bottom: 2px solid white; 
+  border-bottom-color: white;
 }
 .previous:active{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 section{
   padding-bottom: 20px;
@@ -32,7 +35,6 @@ hr{
   transform: scale(1.2);     
 } 
 
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
@@ -54,12 +56,6 @@ hr{
 }
 
 
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
 
 /*------------------------------*/
 
@@ -85,11 +81,7 @@ hr{
   padding:0;
   position: relative;   
 }
-@media screen and (max-width: 1000px){  
-  .modal-content {
-    width: 90% ;
-  }
-}
+
 
 /* The Close Button */
 .close {
@@ -131,4 +123,30 @@ hr{
 
 .hover-shadow:hover {
   box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.3), 0 16px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 1000px){  
+  .modal-content {
+    width: 90% ;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 530px){
+  .previous{
+    font-size: 20px;
+    margin-top: 10px;     
+    background: red;
+    width: auto;
+  }
+  hr{
+    margin:10px;
+  }  
 }

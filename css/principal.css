@@ -176,7 +176,7 @@ article{
 }
 
 #clients,#obras{
-	margin-top: 60px;
+	margin-top: 5%;
 	display: inline-block;		
 }
 #clients{
@@ -194,7 +194,7 @@ article{
 }
 
 #obras p{
-	margin-bottom: 50px;
+	margin-bottom: 5%;
 }
 #logosClientes img{
 	max-height: 200px;	
@@ -303,7 +303,7 @@ footer p:hover{
 		margin-bottom: 15px;
 	}
 	h3{
-		font-size: 25px;
+		font-size: 30px;
 	}
 	footer p{
 		font-size: 20px;
@@ -355,10 +355,16 @@ footer p:hover{
 	h1,li a{
 		font-size: 20px;
 	}
+
+	h2,h3{
+		font-size: 25px;		
+	}
+	
 	#clients,#obras{
 		display: block;
 		width: 100%;
 	}
+
 	#obras img{
 		height: 100px;
 		width: auto;
