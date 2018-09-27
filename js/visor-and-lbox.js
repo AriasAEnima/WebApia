@@ -28,6 +28,7 @@ function chargeImg(title,path,desc,num) {
 	number=num;	
 	var rows=Math.floor(number/4);
 	var k=number%4;
+	if (number<3) divinit="<div class='column doble'>";
 	temp="<hr><h3>"+title+"</h3>"+"<article>"+divinit;
 	for(i = 1; i <=number; i++){
 	    temp += "<div class='container'> <img src='"+path+" ("+ i
