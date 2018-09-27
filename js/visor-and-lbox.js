@@ -1,4 +1,5 @@
 
+// Pagina Web Creada por Julian Eduado Arias Barrera : AriasAenima en GitHub y otras Redes
 
 var number=0;
 var contchangerow=1;	

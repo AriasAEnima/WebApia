@@ -1,4 +1,5 @@
 var movil=$(window).width()<=700;
+// Pagina Web Creada por Julian Eduado Arias Barrera : AriasAenima en GitHub y otras Redes
 
 $("a").click(function () {		
     $(this).animate({
