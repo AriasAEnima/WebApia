@@ -404,7 +404,18 @@ footer p:hover{
 		font-size: 18px !important;
 	}
 }
-
+@media screen and (max-width: 301px){	
+	header{
+		height: 40px;
+		
+	}		
+	section{
+		padding-top: 37px;
+	}
+	#botonMenuMovil{
+		margin-top: 10px;
+	}
+}
 
 @keyframes pulse {
   0%{  
